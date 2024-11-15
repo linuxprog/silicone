@@ -1,0 +1,121 @@
+
+{
+  "/api/iam": {
+    "target": "http://10.200.9.160:8672",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/api/iam": "/api/iam"
+    }
+  },
+  "/v1/referentiel": {
+    "target": "http://10.200.9.160:8652",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/v1/referentiel": "/v1/referentiel"
+    }
+  },
+
+  "/v1/campagnes-promotionnelles": {
+    "target": "http://10.200.9.160:8655",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/v1/campagnes-promotionnelles": "/v1/campagnes-promotionnelles"
+    }
+  },
+  "/v1/historique-ventes": {
+    "target": "http://10.200.9.160:8653",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/v1/historique-ventes": "/v1/historique-ventes"
+    }
+  },
+  "/v1/gammes": {
+    "target": "http://10.200.9.160:8654",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/v1/gammes": "/v1/gammes"
+    }
+  },
+  "/v1/fournisseurs": {
+    "target": "http://10.200.9.160:8656",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/v1/fournisseurs": "/v1/fournisseurs"
+    }
+  },
+  "/v1/clients": {
+    "target": "http://10.200.9.160:8658",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/v1/clients": "/v1/clients"
+    }
+  },
+  "/v1/articles": {
+    "target": "http://10.200.9.160:8651",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/v1/articles": "/v1/articles"
+    }
+  },
+  "/v1/ventes-assistees": {
+    "target": "http://10.200.9.160:8657",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/v1/ventes-assistees": "/v1/ventes-assistees"
+    }
+  },
+  "/v1/api/status/caisse": {
+    "target": "http://10.200.9.160:8679",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/v1/api/status/caisse": "/v1/api/status/caisse"
+    }
+  },
+  "/v1/api/status/check": {
+    "target": "http://10.200.9.160:8679",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/v1/api/status/check": "/v1/api/status/check"
+    }
+  },
+  "/logs": {
+    "target": "http://10.200.9.160:8657",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/logs": "/logs"
+    }
+  },
+  "/keycloakLogout": {
+    "target": "https://keycloak-tg.lbv-security-rec.label-factory.ma/realms",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/keycloakLogout": "/keycloakLogout"
+    }
+  }
+}
